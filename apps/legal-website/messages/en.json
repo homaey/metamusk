@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Home",
+    "lawyers": "Our Lawyers",
+    "services": "Services",
+    "documents": "Legal Documents",
+    "articles": "Articles",
+    "contact": "Contact",
+    "consultation": "Free Consultation"
+  },
+  "hero": {
+    "badge": "Trusted Legal Institution",
+    "title": "Expert Legal Counsel &",
+    "titleHighlight": "Trusted Representation",
+    "subtitle": "With over 20 years of experience, our expert team is ready to provide comprehensive legal services from consultation to preparation of judicial documents.",
+    "cta": "Free Consultation",
+    "ctaSecondary": "Our Services",
+    "stats": {
+      "cases": "Successful Cases",
+      "clients": "Satisfied Clients",
+      "experience": "Years Experience",
+      "lawyers": "Expert Lawyers"
+    }
+  },
+  "services": {
+    "title": "Our Legal Services",
+    "subtitle": "Providing the most comprehensive legal services with international standards",
+    "items": {
+      "civil": {
+        "title": "Civil Litigation",
+        "desc": "Legal representation in civil, contractual, property and family cases"
+      },
+      "criminal": {
+        "title": "Criminal Defense",
+        "desc": "Defending client rights in criminal cases and public offenses"
+      },
+      "commercial": {
+        "title": "Commercial Law",
+        "desc": "Corporate consulting, commercial contract drafting, company registration"
+      },
+      "documents": {
+        "title": "Legal Documents",
+        "desc": "Preparation of notices, petitions, complaints and legal briefs"
+      },
+      "estate": {
+        "title": "Property Law",
+        "desc": "Real estate transactions, land disputes, title inquiries and deeds"
+      },
+      "family": {
+        "title": "Family Law",
+        "desc": "Divorce, alimony, custody, dowry and inheritance matters"
+      }
+    }
+  },
+  "documents": {
+    "title": "Legal Document Preparation",
+    "subtitle": "With guidance from our lawyers, prepare your legal documents accurately and professionally",
+    "types": {
+      "notice": {
+        "title": "Legal Notice",
+        "desc": "Official legal warning to the opposing party to fulfill an obligation or refrain from an act",
+        "time": "24 Hours"
+      },
+      "petition": {
+        "title": "Petition / Lawsuit",
+        "desc": "Filing a lawsuit in judicial authorities to claim rights",
+        "time": "48 Hours"
+      },
+      "complaint": {
+        "title": "Criminal Complaint",
+        "desc": "Formal complaint against individuals in criminal cases",
+        "time": "24 Hours"
+      },
+      "brief": {
+        "title": "Legal Brief",
+        "desc": "Defense or submitted brief to judicial authorities",
+        "time": "72 Hours"
+      }
+    },
+    "form": {
+      "type": "Document Type",
+      "selectType": "Select document type",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email",
+      "subject": "Subject",
+      "description": "Brief case description",
+      "submit": "Submit Request",
+      "submitting": "Submitting...",
+      "success": "Your request has been submitted. Our lawyers will contact you shortly.",
+      "placeholders": {
+        "name": "John Smith",
+        "phone": "+1 234 567 8900",
+        "email": "example@email.com",
+        "subject": "Write your case subject",
+        "description": "Write a brief description of your legal situation..."
+      }
+    }
+  },
+  "lawyers": {
+    "title": "Our Lawyers",
+    "subtitle": "Our expert team consists of licensed bar attorneys with extensive experience",
+    "viewProfile": "View Profile",
+    "experience": "Years Experience",
+    "cases": "Cases"
+  },
+  "articles": {
+    "title": "Legal Articles & News",
+    "subtitle": "Latest analyses and legal guides by our expert lawyers",
+    "readMore": "Read More",
+    "minRead": "min read",
+    "categories": {
+      "civil": "Civil Law",
+      "criminal": "Criminal Law",
+      "commercial": "Commercial Law",
+      "family": "Family Law",
+      "estate": "Property Law"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Contact us for a free consultation",
+    "address": "Address",
+    "addressValue": "Tehran, Valiasr Street, No. 123, 5th Floor",
+    "phone": "Phone",
+    "phoneValue": "+98 21 8888 8888",
+    "email": "Email",
+    "emailValue": "info@legalfirm.ir",
+    "hours": "Working Hours",
+    "hoursValue": "Sat–Wed: 8AM–5PM | Thu: 8AM–1PM",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Your message has been received. We will respond shortly."
+    }
+  },
+  "footer": {
+    "description": "A law firm with over 20 years of experience in providing specialized legal services",
+    "links": "Quick Links",
+    "services": "Services",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "seo": {
+    "home": {
+      "title": "Legal Firm – Expert Legal Counsel & Services",
+      "description": "Specialized legal services including consultation, representation, legal document preparation, petitions, complaints and notices by licensed bar attorneys"
+    },
+    "lawyers": {
+      "title": "Our Lawyers – Expert Legal Team",
+      "description": "Meet our licensed bar attorneys specializing in civil, criminal, commercial and family law"
+    },
+    "documents": {
+      "title": "Legal Documents – Petitions, Complaints, Notices, Briefs",
+      "description": "Professional preparation of legal documents including legal notices, petitions, criminal complaints and judicial briefs"
+    },
+    "articles": {
+      "title": "Legal Articles – Expert Guides & Analysis",
+      "description": "Legal articles and guides covering civil, criminal, commercial and family law"
+    },
+    "contact": {
+      "title": "Contact Our Law Firm",
+      "description": "Contact us for a free legal consultation"
+    }
+  }
+}
