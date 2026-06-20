@@ -47,7 +47,7 @@ export default async function HomePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <Hero />
+      <Hero locale={locale} />
       <Services />
       <LawyersSection />
       <DocumentsSection />
