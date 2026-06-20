@@ -1,0 +1,31 @@
+{
+  "name": "novawallet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Non-custodial crypto wallet as a Telegram Mini App (TON-first, EVM-ready).",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.20.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "comment:overrides": "Force patched transitive deps (ws via viem/solana; uuid via solana's jayson RPC client) instead of major-downgrading viem/web3.js. See docs/02-SECURITY.md.",
+  "overrides": {
+    "ws": "^8.21.0",
+    "uuid": "^11.1.1"
+  },
+  "license": "UNLICENSED"
+}

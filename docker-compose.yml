@@ -1,0 +1,55 @@
+# Local production-like stack. For real deployment, run api/miniapp behind an
+# HTTPS reverse proxy (Caddy/Traefik/Cloud LB) — Telegram requires HTTPS.
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      NODE_ENV: production
+      API_PORT: 8787
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      INITDATA_MAX_AGE_SECONDS: 86400
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
+      DATABASE_URL: postgres://nova:${POSTGRES_PASSWORD:-nova}@postgres:5432/nova
+      REDIS_URL: redis://redis:6379
+      # Dedicated RPC providers (recommended for production):
+      EVM_RPC_URL: ${EVM_RPC_URL:-}
+      SOLANA_RPC_URL: ${SOLANA_RPC_URL:-}
+      TON_RPC_URL: ${TON_RPC_URL:-}
+      BITCOIN_API_URL: ${BITCOIN_API_URL:-}
+    ports:
+      - "8787:8787"
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+
+  miniapp:
+    build:
+      context: .
+      dockerfile: apps/miniapp/Dockerfile
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8787}
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: nova
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-nova}
+      POSTGRES_DB: nova
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+
+volumes:
+  pgdata:
